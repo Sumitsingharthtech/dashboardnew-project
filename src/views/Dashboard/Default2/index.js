@@ -3,12 +3,9 @@ import { useHistory } from 'react-router-dom';
 import { Card, CardContent, Divider, Typography, makeStyles, Grid, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-//import Logo from './../../assets/images/logo-dark.svg';
-
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor:'#b8e4eb',
-        height: '80vh',
         minHeight: '100%',
     },
     backButton: {
@@ -53,7 +50,7 @@ const Login = () => {
         <>
             <form className='login-form'>
                 <Grid container justify="center" alignItems="center" className={classes.root}>
-                    <Grid item xs={11} sm={7} md={6} lg={4}>
+                    <Grid item xs={11} sm={9} md={10} lg={4}>
                         <Card className={classes.card}>
                             <CardContent className={classes.content}>
                                 <Grid container direction="column" spacing={4} justify="center">
@@ -61,10 +58,10 @@ const Login = () => {
                                         <Grid container justify="space-between">
                                             <Grid item>
                                                 <Typography color="textPrimary" gutterBottom variant="h2">
-                                                    Sign in
+Profile Details
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary">
-                                                    To keep connected with us.
+                                                   fill admin details*
                                                 </Typography>
                                             </Grid>
                                         </Grid>
@@ -73,7 +70,27 @@ const Login = () => {
                                         <TextField
                                             fullWidth
                                             autoFocus
-                                            label="Email Address / Username"
+                                            label="FirstName"
+                                            margin="normal"
+                                            name="firstName"
+                                            type="text"
+                                            defaultValue=""
+                                            variant="outlined"
+                                            required
+                                        />
+                                        <TextField
+                                            fullWidth
+                                            label="LastName"
+                                            margin="normal"
+                                            name="lastName"
+                                            type="text"
+                                            defaultValue=""
+                                            variant="outlined"
+                                            required
+                                        />
+                                        <TextField
+                                            fullWidth
+                                            label="Email"
                                             margin="normal"
                                             name="email"
                                             type="email"
@@ -83,14 +100,15 @@ const Login = () => {
                                         />
                                         <TextField
                                             fullWidth
-                                            label="Password"
+                                            label="Contact No."
                                             margin="normal"
-                                            name="password"
-                                            type="password"
+                                            name="contactNo"
+                                            type="number"
                                             defaultValue=""
                                             variant="outlined"
                                             required
                                         />
+    
                                     </Grid>
                                     <Divider />
                                     <Grid container justify="flex-start" className={classes.margin}>
@@ -102,7 +120,7 @@ const Login = () => {
                                                 to="/register"
                                                 className={classes.forgot}
                                             >
-                                                Create new account
+                                               Are you Sure ?
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12}>
@@ -118,7 +136,7 @@ const Login = () => {
                                                 }}
                                                 className="loginbutton"
                                             >
-                                                Login
+                                                Update Profile
                                             </button>
                                         </Grid>
                                     </Grid>

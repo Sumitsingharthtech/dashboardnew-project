@@ -2,7 +2,7 @@ import NavigationOutlinedIcon from '@material-ui/icons/NavigationOutlined';
 import Equalizer from '@material-ui/icons/Equalizer';
 import Adjust from '@material-ui/icons/Adjust';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+// import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 // import Account from '@material-ui/icons/Account';
 
@@ -13,7 +13,7 @@ const icons = {
     Equalizer:Equalizer,
     Adjust:Adjust,
     AccountCircleIcon:AccountCircleIcon,
-    PersonOutlineIcon:PersonOutlineIcon,
+
     
 };
 
@@ -21,7 +21,7 @@ export default {
     items: [
         {
             id: 'navigation',
-            title: 'Dashboard',
+            title: 'Your Private Page',
             caption: 'Admin Panel',
             type: 'group',
             icon: icons['NavigationOutlinedIcon'],
@@ -44,7 +44,7 @@ export default {
                     id: 'dashboard',
                     title: 'Post',
                     type: 'item',
-                    icon: icons['PersonOutlineIcon'],
+                    icon: icons['Equalizer'],
                     url: 'post',
                 },
                 {
@@ -52,7 +52,7 @@ export default {
                     title: 'Profile',
                     type: 'item',
                     icon: icons['AccountCircleIcon'],
-                    url: 'post',
+                    url: 'profile',
                 },
                 
             ],

@@ -36,7 +36,7 @@ const NavGroup = (props) => {
     return (
         <List
             subheader={
-                <Typography style={{color: '#01543d', fontSize:'22px', }} variant="caption" className={classes.menuCaption} display="block" gutterBottom>
+                <Typography style={{color: '#2596be', fontSize:'22px', }} variant="caption" className={classes.menuCaption} display="block" gutterBottom>
                     {item.title}
                     {item.caption && (
                         <Typography style={{color: '#073f7c',fontSize:'18px',}}variant="caption" className={classes.subMenuCaption} display="block" gutterBottom>

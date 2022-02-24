@@ -1,26 +1,25 @@
 .MuiAppBar-colorPrimary {
-    /* color: #fff !important; */
+    
     background-color: #fff !important;
 }
 .MuiListItem-root.Mui-selected {
     color: #000 !important;
-    background-color: #8af4ff !important;
+    background-color: #a6e3ec !important;
     margin: 10px 15px !important;
 }
 .MuiListItem-root.Mui-selected .MuiListItemIcon-root {
-    color: #01543d !important;
+    color: #080808 !important;
 }
 .MuiTableCell-body {
-    color: #01543d !important; 
+    color: #a0e4db !important; 
 }
 .MuiTableContainer-root {
     width: 100%;
     box-shadow: none;
-    /* overflow-x: auto; */
 }
 .MuiTableHead-root {
     display: table-header-group !important;
-    background: #8af4ff !important;
+    background: #2cc7de !important;
     border-bottom: 1px solid
     rgb(37 86 139 )!important;
 }
