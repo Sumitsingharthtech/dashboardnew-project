@@ -1,0 +1,17 @@
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    
+    text-decoration: none;
+ 
+  }
+  a:hover {
+    color: rgb(37, 80, 158);
+    background-color: cornflowerblue;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    opacity: 5px;
+
+  }
